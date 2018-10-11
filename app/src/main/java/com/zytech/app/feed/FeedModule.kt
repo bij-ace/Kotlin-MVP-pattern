@@ -17,7 +17,7 @@ class FeedModule {
     @Singleton
     @Provides
     fun provideFeedModel(mApiService: ZytechApi):FeedFragmentMVP.Model{
-        return FeedModel.getInstance(mApiService)
+        return FeedModel(mApiService)
     }
 
 }

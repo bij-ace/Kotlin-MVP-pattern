@@ -19,7 +19,7 @@ import javax.inject.Inject
 class FeedFragment : Fragment(), FeedFragmentMVP.View {
 
     @Inject
-    lateinit var presenter: FeedFragmentPresenter
+    lateinit var presenter: FeedFragmentMVP.Presenter
 
     override fun onAttach(context: Context?) {
         (activity!!.application as ZytechApp).getComponent().inject(this@FeedFragment)
