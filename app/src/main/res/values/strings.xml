@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Zytech</string>
+    <string name="nav_groups">Groups</string>
+    <string name="nav_feed">Feed</string>
+    <string name="nav_inbox">Inbox</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_edit" />
+</resources>
