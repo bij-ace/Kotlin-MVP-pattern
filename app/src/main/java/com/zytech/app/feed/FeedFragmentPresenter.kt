@@ -5,9 +5,8 @@ import com.google.gson.Gson
 import com.zytech.app.model.Feed
 import rx.Observer
 import rx.schedulers.Schedulers
-import javax.inject.Inject
 
-class FeedFragmentPresenter @Inject constructor(var feedModel: FeedFragmentMVP.Model) : FeedFragmentMVP.Presenter {
+class FeedFragmentPresenter constructor(private var feedModel: FeedFragmentMVP.Model) : FeedFragmentMVP.Presenter {
 
     var feedView: FeedFragmentMVP.View? = null
 
