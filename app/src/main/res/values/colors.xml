@@ -5,4 +5,7 @@
     <color name="colorAccent">#D81B60</color>
     <color name="gray">#e7e7e7</color>
     <color name="liked">#5C6BC0</color>
+
+    <color name="colorPrimaryGreen">#008577</color>
+    <color name="colorPrimaryDarkGreen">#00574B</color>
 </resources>

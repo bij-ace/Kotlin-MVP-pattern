@@ -5,12 +5,13 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import com.zytech.app.R
+import com.zytech.app.base.BaseActivity
 import com.zytech.app.feed.FeedFragment
 import com.zytech.app.root.ZytechApp
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
-class MainActivity : AppCompatActivity(), MainActivityMVP.View {
+class MainActivity : BaseActivity(), MainActivityMVP.View {
 
     @Inject
     lateinit var presenter: MainActivityMVP.Presenter
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity(), MainActivityMVP.View {
     override fun onCreate(savedInstanceState: Bundle?) {
         (application as ZytechApp).getComponent().inject(this@MainActivity)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setLayout(R.layout.activity_main, R.style.AppTheme)
 
         init()
 
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity(), MainActivityMVP.View {
 
     override fun onResume() {
         super.onResume()
+//        setLayout(R.layout.activity_main, R.style.AppThemeGreen)
         presenter.setView(this@MainActivity)
     }
 
