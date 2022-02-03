@@ -1,5 +1,5 @@
 # Kotlin-MVP-pattern
-- Retofit
+- Retrofit
 - RxAndroid
 - Dagger2
 - Kotlin
